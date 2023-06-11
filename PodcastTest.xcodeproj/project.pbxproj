@@ -7,15 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51E3CF6486DD7CAA934A4A47 /* Pods_PodcastTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2C76E505E47ED944998E12 /* Pods_PodcastTest.framework */; };
+		879A01532A3683A800A54FAF /* Extensions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 879A01522A3683A800A54FAF /* Extensions .swift */; };
+		879A015D2A36880F00A54FAF /* IBMPlexSansArabic-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879A015B2A36880000A54FAF /* IBMPlexSansArabic-Bold.otf */; };
+		879A015E2A36881300A54FAF /* IBMPlexSansArabic-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879A015A2A36880000A54FAF /* IBMPlexSansArabic-ExtraLight.otf */; };
+		879A015F2A36881600A54FAF /* IBMPlexSansArabic-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879A01592A3687FF00A54FAF /* IBMPlexSansArabic-Light.otf */; };
+		879A01602A36881900A54FAF /* IBMPlexSansArabic-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879A01582A3687FF00A54FAF /* IBMPlexSansArabic-Medium.otf */; };
+		879A01612A36881D00A54FAF /* IBMPlexSansArabic-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879A01552A3687FF00A54FAF /* IBMPlexSansArabic-Regular.otf */; };
+		879A01622A36881E00A54FAF /* IBMPlexSansArabic-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879A015C2A36880000A54FAF /* IBMPlexSansArabic-SemiBold.otf */; };
+		879A01632A36882000A54FAF /* IBMPlexSansArabic-Text.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879A01562A3687FF00A54FAF /* IBMPlexSansArabic-Text.otf */; };
+		879A01642A36882200A54FAF /* IBMPlexSansArabic-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879A01572A3687FF00A54FAF /* IBMPlexSansArabic-Thin.otf */; };
+		879A01672A3689CC00A54FAF /* PlayListTableCellNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 879A01662A3689CC00A54FAF /* PlayListTableCellNib.xib */; };
 		87E92BE62A3641FD00DB1ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E92BE52A3641FD00DB1ACA /* AppDelegate.swift */; };
 		87E92BE82A3641FD00DB1ACA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E92BE72A3641FD00DB1ACA /* SceneDelegate.swift */; };
 		87E92BEA2A3641FD00DB1ACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E92BE92A3641FD00DB1ACA /* ViewController.swift */; };
 		87E92BED2A3641FD00DB1ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E92BEB2A3641FD00DB1ACA /* Main.storyboard */; };
 		87E92BEF2A3641FF00DB1ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E92BEE2A3641FF00DB1ACA /* Assets.xcassets */; };
 		87E92BF22A3641FF00DB1ACA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87E92BF02A3641FF00DB1ACA /* LaunchScreen.storyboard */; };
+		87E92BFE2A36764A00DB1ACA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E92BFD2A36764A00DB1ACA /* HomeVC.swift */; };
+		87E92C012A367D2800DB1ACA /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E92C002A367D2800DB1ACA /* DesignableView.swift */; };
+		87E92C032A367F4100DB1ACA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E92C022A367F4100DB1ACA /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12730E33DB2296B18C867344 /* Pods-PodcastTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodcastTest.debug.xcconfig"; path = "Target Support Files/Pods-PodcastTest/Pods-PodcastTest.debug.xcconfig"; sourceTree = "<group>"; };
+		879A01522A3683A800A54FAF /* Extensions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions .swift"; sourceTree = "<group>"; };
+		879A01552A3687FF00A54FAF /* IBMPlexSansArabic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Regular.otf"; sourceTree = "<group>"; };
+		879A01562A3687FF00A54FAF /* IBMPlexSansArabic-Text.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Text.otf"; sourceTree = "<group>"; };
+		879A01572A3687FF00A54FAF /* IBMPlexSansArabic-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Thin.otf"; sourceTree = "<group>"; };
+		879A01582A3687FF00A54FAF /* IBMPlexSansArabic-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Medium.otf"; sourceTree = "<group>"; };
+		879A01592A3687FF00A54FAF /* IBMPlexSansArabic-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Light.otf"; sourceTree = "<group>"; };
+		879A015A2A36880000A54FAF /* IBMPlexSansArabic-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-ExtraLight.otf"; sourceTree = "<group>"; };
+		879A015B2A36880000A54FAF /* IBMPlexSansArabic-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Bold.otf"; sourceTree = "<group>"; };
+		879A015C2A36880000A54FAF /* IBMPlexSansArabic-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-SemiBold.otf"; sourceTree = "<group>"; };
+		879A01662A3689CC00A54FAF /* PlayListTableCellNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListTableCellNib.xib; sourceTree = "<group>"; };
 		87E92BE22A3641FD00DB1ACA /* PodcastTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E92BE52A3641FD00DB1ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87E92BE72A3641FD00DB1ACA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +49,11 @@
 		87E92BEE2A3641FF00DB1ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87E92BF12A3641FF00DB1ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87E92BF32A3641FF00DB1ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87E92BFD2A36764A00DB1ACA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		87E92C002A367D2800DB1ACA /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		87E92C022A367F4100DB1ACA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		C132A92C9F97917CC2E26653 /* Pods-PodcastTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodcastTest.release.xcconfig"; path = "Target Support Files/Pods-PodcastTest/Pods-PodcastTest.release.xcconfig"; sourceTree = "<group>"; };
+		ED2C76E505E47ED944998E12 /* Pods_PodcastTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PodcastTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +61,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51E3CF6486DD7CAA934A4A47 /* Pods_PodcastTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		879A01542A3687CB00A54FAF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				879A015B2A36880000A54FAF /* IBMPlexSansArabic-Bold.otf */,
+				879A015A2A36880000A54FAF /* IBMPlexSansArabic-ExtraLight.otf */,
+				879A01592A3687FF00A54FAF /* IBMPlexSansArabic-Light.otf */,
+				879A01582A3687FF00A54FAF /* IBMPlexSansArabic-Medium.otf */,
+				879A01552A3687FF00A54FAF /* IBMPlexSansArabic-Regular.otf */,
+				879A015C2A36880000A54FAF /* IBMPlexSansArabic-SemiBold.otf */,
+				879A01562A3687FF00A54FAF /* IBMPlexSansArabic-Text.otf */,
+				879A01572A3687FF00A54FAF /* IBMPlexSansArabic-Thin.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		879A01652A3689AD00A54FAF /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				879A01682A368BDC00A54FAF /* Nibs */,
+				879A01662A3689CC00A54FAF /* PlayListTableCellNib.xib */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		879A01682A368BDC00A54FAF /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
 		87E92BD92A3641FD00DB1ACA = {
 			isa = PBXGroup;
 			children = (
 				87E92BE42A3641FD00DB1ACA /* PodcastTest */,
 				87E92BE32A3641FD00DB1ACA /* Products */,
+				D799476C5F8D7B4B2A30CE61 /* Pods */,
+				8A31814CC640CC669D9A4D6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +120,78 @@
 		87E92BE42A3641FD00DB1ACA /* PodcastTest */ = {
 			isa = PBXGroup;
 			children = (
+				87E92BFF2A367D1300DB1ACA /* Helpers */,
+				87E92BFB2A3675EB00DB1ACA /* TabBar */,
+				87E92BFA2A3643DA00DB1ACA /* Resources */,
+				87E92BF92A36437F00DB1ACA /* Auth */,
 				87E92BE52A3641FD00DB1ACA /* AppDelegate.swift */,
 				87E92BE72A3641FD00DB1ACA /* SceneDelegate.swift */,
 				87E92BE92A3641FD00DB1ACA /* ViewController.swift */,
 				87E92BEB2A3641FD00DB1ACA /* Main.storyboard */,
 				87E92BEE2A3641FF00DB1ACA /* Assets.xcassets */,
+				87E92C022A367F4100DB1ACA /* Colors.xcassets */,
 				87E92BF02A3641FF00DB1ACA /* LaunchScreen.storyboard */,
 				87E92BF32A3641FF00DB1ACA /* Info.plist */,
 			);
 			path = PodcastTest;
+			sourceTree = "<group>";
+		};
+		87E92BF92A36437F00DB1ACA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		87E92BFA2A3643DA00DB1ACA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				879A01542A3687CB00A54FAF /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		87E92BFB2A3675EB00DB1ACA /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				87E92BFC2A36763700DB1ACA /* Home */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		87E92BFC2A36763700DB1ACA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				879A01652A3689AD00A54FAF /* TableCells */,
+				87E92BFD2A36764A00DB1ACA /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		87E92BFF2A367D1300DB1ACA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				87E92C002A367D2800DB1ACA /* DesignableView.swift */,
+				879A01522A3683A800A54FAF /* Extensions .swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8A31814CC640CC669D9A4D6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED2C76E505E47ED944998E12 /* Pods_PodcastTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D799476C5F8D7B4B2A30CE61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12730E33DB2296B18C867344 /* Pods-PodcastTest.debug.xcconfig */,
+				C132A92C9F97917CC2E26653 /* Pods-PodcastTest.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +201,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87E92BF62A3641FF00DB1ACA /* Build configuration list for PBXNativeTarget "PodcastTest" */;
 			buildPhases = (
+				360C1AF935A8D7A1BEB36F85 /* [CP] Check Pods Manifest.lock */,
 				87E92BDE2A3641FD00DB1ACA /* Sources */,
 				87E92BDF2A3641FD00DB1ACA /* Frameworks */,
 				87E92BE02A3641FD00DB1ACA /* Resources */,
+				17112F9C7E5AE6EE96D68503 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,21 +254,76 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				879A01642A36882200A54FAF /* IBMPlexSansArabic-Thin.otf in Resources */,
+				879A01632A36882000A54FAF /* IBMPlexSansArabic-Text.otf in Resources */,
+				879A01602A36881900A54FAF /* IBMPlexSansArabic-Medium.otf in Resources */,
+				879A01622A36881E00A54FAF /* IBMPlexSansArabic-SemiBold.otf in Resources */,
+				879A01612A36881D00A54FAF /* IBMPlexSansArabic-Regular.otf in Resources */,
+				879A015F2A36881600A54FAF /* IBMPlexSansArabic-Light.otf in Resources */,
+				879A015E2A36881300A54FAF /* IBMPlexSansArabic-ExtraLight.otf in Resources */,
+				879A015D2A36880F00A54FAF /* IBMPlexSansArabic-Bold.otf in Resources */,
 				87E92BF22A3641FF00DB1ACA /* LaunchScreen.storyboard in Resources */,
+				87E92C032A367F4100DB1ACA /* Colors.xcassets in Resources */,
 				87E92BEF2A3641FF00DB1ACA /* Assets.xcassets in Resources */,
+				879A01672A3689CC00A54FAF /* PlayListTableCellNib.xib in Resources */,
 				87E92BED2A3641FD00DB1ACA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17112F9C7E5AE6EE96D68503 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PodcastTest/Pods-PodcastTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PodcastTest/Pods-PodcastTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PodcastTest/Pods-PodcastTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		360C1AF935A8D7A1BEB36F85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PodcastTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		87E92BDE2A3641FD00DB1ACA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				879A01532A3683A800A54FAF /* Extensions .swift in Sources */,
 				87E92BEA2A3641FD00DB1ACA /* ViewController.swift in Sources */,
+				87E92BFE2A36764A00DB1ACA /* HomeVC.swift in Sources */,
 				87E92BE62A3641FD00DB1ACA /* AppDelegate.swift in Sources */,
+				87E92C012A367D2800DB1ACA /* DesignableView.swift in Sources */,
 				87E92BE82A3641FD00DB1ACA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +466,7 @@
 		};
 		87E92BF72A3641FF00DB1ACA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12730E33DB2296B18C867344 /* Pods-PodcastTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +495,7 @@
 		};
 		87E92BF82A3641FF00DB1ACA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C132A92C9F97917CC2E26653 /* Pods-PodcastTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
