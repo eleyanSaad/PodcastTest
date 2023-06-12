@@ -12,6 +12,6 @@ pod 'SwiftyJSON'
 pod 'SDWebImage', '~> 5.0'
 pod 'SwifterSwift'
 pod 'ParallaxHeader', '~> 3.0.0'
-
-
+pod "RappleProgressHUD"
+pod "SkeletonView"
 end

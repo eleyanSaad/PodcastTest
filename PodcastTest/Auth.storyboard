@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSansArabic-Regular.otf">
+            <string>IBMPlexSansArabic</string>
+        </array>
+        <array key="IBMPlexSansArabic-SemiBold.otf">
+            <string>IBMPlexSansArabic-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="authRoot" id="Y6W-OH-hqX" customClass="LoginVC" customModule="PodcastTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xkE-1R-d1m">
+                                <rect key="frame" x="20" y="234.66666666666663" width="353" height="120"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البريد الالكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ceZ-Yf-dTX">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4In-7V-eJa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IBMPlexSansArabic" family="IBM Plex Sans Arabic" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gMw-2e-2Rk">
+                                        <rect key="frame" x="0.0" y="70.000000000000028" width="353" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jFT-yf-20w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IBMPlexSansArabic" family="IBM Plex Sans Arabic" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تسجيل الدخول" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heA-Fk-Iza">
+                                <rect key="frame" x="153" y="159" width="87" height="25.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25.670000000000002" id="xEJ-ho-iGI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IBMPlexSansArabic-SemiBold" family="IBM Plex Sans Arabic" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFd-no-feF">
+                                <rect key="frame" x="96.666666666666686" y="384.66666666666669" width="200" height="50"/>
+                                <color key="backgroundColor" name="HaileyBlue300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hkO-rO-jA7"/>
+                                    <constraint firstAttribute="width" constant="200" id="yAu-cE-XKW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IBMPlexSansArabic-SemiBold" family="IBM Plex Sans Arabic" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="تسجيل الدخول">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" name="HaileyBlue300"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="px0-WD-swQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xkE-1R-d1m" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="2qY-rH-mGg"/>
+                            <constraint firstItem="hFd-no-feF" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="LpD-f2-94e"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xkE-1R-d1m" secondAttribute="trailing" constant="20" id="P8v-c9-Lh3"/>
+                            <constraint firstItem="heA-Fk-Iza" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="Wpb-Qn-5sO"/>
+                            <constraint firstItem="xkE-1R-d1m" firstAttribute="top" secondItem="heA-Fk-Iza" secondAttribute="bottom" constant="50" id="Z5h-e7-Ni1"/>
+                            <constraint firstItem="hFd-no-feF" firstAttribute="top" secondItem="xkE-1R-d1m" secondAttribute="bottom" constant="30" id="h9r-Xx-jpK"/>
+                            <constraint firstItem="heA-Fk-Iza" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="rcs-dN-RUv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="ceZ-Yf-dTX" id="KNM-Kw-5da"/>
+                        <outlet property="passwordTextField" destination="gMw-2e-2Rk" id="Uef-DE-GHH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-59" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="HaileyBlue300">
+            <color red="0.24313727020000001" green="0.43921568989999998" blue="0.92156863209999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

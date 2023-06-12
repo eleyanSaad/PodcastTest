@@ -32,6 +32,25 @@ class PlayListTableCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func setData(data: EposideClass?){
+        
+        if data?.isPlaying == true {
+            self.playPodcastButton.setImage(UIImage(named: "pause"), for: .normal)
+        }else{
+            self.playPodcastButton.setImage(UIImage(named: "Play"), for: .normal)
+        }
+        guard let obj = data?.eposide else {
+            return
+        }
+        
+        
+        self.podCastImageView.sd_setImage(with: URL(string: obj.image ?? ""), placeholderImage: .menueDotsIcon)
+        self.podCastTitleLabel.text = obj.name?.convertHTMLToString()
+        self.podCastDescrpationLabel.text = obj.podcastName ?? ""
+        
+        self.podCastDateLabel.text = " \(obj.releaseDate?.convertToCustomDateFormat(format: "MMMM", lang: "ar") ?? "") \(obj.releaseDate?.convertToCustomDateFormat(format: "yyy", lang: "en") ?? ""),.\(obj.duration?.formattedTimeString ?? "")"
+    }
 
     
     // MARK: - ACTIONS
@@ -39,6 +58,7 @@ class PlayListTableCell: UITableViewCell {
     }
     
     @IBAction func playPodCastTapped(_ sender: Any) {
+        self.delegate?.playPodCastTapped(cell: self)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -34,6 +34,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="menu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="dropListTapped:" destination="SH4-oE-wa2" eventType="touchUpInside" id="UFX-kS-B2Q"/>
                                 </connections>
@@ -43,8 +46,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="eiJ-9P-2vB"/>
                                 </constraints>
+                                <color key="tintColor" name="AccentColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="Play"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="playPodCastTapped:" destination="SH4-oE-wa2" eventType="touchUpInside" id="9kD-Pf-90g"/>
                                 </connections>
@@ -53,6 +60,9 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="57.329999999999998" id="ouK-1Q-Um1"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </stackView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="TnI-Jz-s1U">
                         <rect key="frame" x="300.66666666666669" y="15" width="76" height="76"/>
@@ -60,40 +70,65 @@
                             <constraint firstAttribute="width" constant="76" id="8RA-iS-bUw"/>
                             <constraint firstAttribute="height" constant="76" id="Lgb-L5-2eT"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="SNG-Nd-PZd">
-                        <rect key="frame" x="125.66666666666669" y="21.999999999999996" width="160" height="58.666666666666657"/>
+                        <rect key="frame" x="80.333333333333329" y="22" width="205.33333333333337" height="76.666666666666671"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لماذا نتوقف شهرين قبل كأس العالم؟" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fye-yR-dKQ">
-                                <rect key="frame" x="0.0" y="0.0" width="160" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لماذا نتوقف شهرين قبل كأس العالم؟لماذا نتوقف شهرين قبل كأس العالم؟" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fye-yR-dKQ">
+                                <rect key="frame" x="0.0" y="0.0" width="205.33333333333334" height="36"/>
                                 <fontDescription key="fontDescription" name="IBMPlexSansArabic-SemiBold" family="IBM Plex Sans Arabic" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرتدة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngU-Uf-O0S">
-                                <rect key="frame" x="0.0" y="24" width="160" height="15"/>
+                                <rect key="frame" x="0.0" y="42" width="205.33333333333334" height="15"/>
                                 <fontDescription key="fontDescription" name="IBMPlexSansArabic" family="IBM Plex Sans Arabic" pointSize="10"/>
                                 <color key="textColor" name="ChimneySweep500"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اكتوبر 2020 . 23 دقيقة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8m-IJ-hWf">
-                                <rect key="frame" x="0.0" y="45" width="160" height="13.666666666666664"/>
+                                <rect key="frame" x="0.0" y="62.999999999999993" width="205.33333333333334" height="13.666666666666664"/>
                                 <fontDescription key="fontDescription" name="IBMPlexSansArabic" family="IBM Plex Sans Arabic" pointSize="9"/>
                                 <color key="textColor" name="ChimneySweep500"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </stackView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="SNG-Nd-PZd" firstAttribute="top" secondItem="YVi-kQ-AwX" secondAttribute="top" constant="22" id="A7u-fo-h2g"/>
                     <constraint firstItem="zPJ-io-TOM" firstAttribute="leading" secondItem="YVi-kQ-AwX" secondAttribute="leading" constant="18" id="Zam-kA-DGF"/>
                     <constraint firstItem="TnI-Jz-s1U" firstAttribute="leading" secondItem="SNG-Nd-PZd" secondAttribute="trailing" constant="15" id="lSZ-nt-i7a"/>
                     <constraint firstItem="zPJ-io-TOM" firstAttribute="top" secondItem="YVi-kQ-AwX" secondAttribute="top" constant="15" id="lW1-wb-PoL"/>
-                    <constraint firstItem="Fye-yR-dKQ" firstAttribute="centerY" secondItem="eC3-Bv-7oz" secondAttribute="centerY" id="rfH-94-8c1"/>
+                    <constraint firstItem="SNG-Nd-PZd" firstAttribute="leading" secondItem="zPJ-io-TOM" secondAttribute="trailing" constant="5" id="uar-Sa-FfI"/>
                     <constraint firstItem="TnI-Jz-s1U" firstAttribute="top" secondItem="YVi-kQ-AwX" secondAttribute="top" constant="15" id="vco-vx-Kt6"/>
                     <constraint firstAttribute="trailing" secondItem="TnI-Jz-s1U" secondAttribute="trailing" constant="16.5" id="wVI-Nf-Tr8"/>
                 </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                </userDefinedRuntimeAttributes>
             </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="playPodcastButton" destination="eC3-Bv-7oz" id="4bL-hQ-MbB"/>
                 <outlet property="podCastDateLabel" destination="H8m-IJ-hWf" id="D3d-jG-9dD"/>
@@ -108,6 +143,9 @@
         <image name="Play" width="32.333332061767578" height="32.333332061767578"/>
         <image name="menu" width="24.333333969116211" height="24.333333969116211"/>
         <image name="photo" width="76.333335876464844" height="76.333335876464844"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="ChimneySweep500">
             <color red="0.46299999952316284" green="0.47099998593330383" blue="0.48600000143051147" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

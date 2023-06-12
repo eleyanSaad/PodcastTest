@@ -24,12 +24,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.overrideUserInterfaceStyle = .light
         }
         
-        let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewcontroller:UIViewController = mainstoryboard.instantiateViewController(withIdentifier: "MainTabBar")
-        window.rootViewController = newViewcontroller
-        window.makeKeyAndVisible()
-
-      
+        
+        if AppData.isLogin == true {
+            let mainstoryboard = AppStoryboard.main.instance
+            let newViewcontroller:UIViewController = mainstoryboard.instantiateViewController(withIdentifier: "MainTabBar")
+            window.rootViewController = newViewcontroller
+            window.makeKeyAndVisible()
+            
+        }else{
+            let mainstoryboard = AppStoryboard.auth.instance
+            let newViewcontroller:UIViewController = mainstoryboard.instantiateViewController(withIdentifier: "authRoot")
+            window.rootViewController = newViewcontroller
+            window.makeKeyAndVisible()
+        }
     }
 
     
