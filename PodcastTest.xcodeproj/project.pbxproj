@@ -10,7 +10,7 @@
 		51E3CF6486DD7CAA934A4A47 /* Pods_PodcastTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2C76E505E47ED944998E12 /* Pods_PodcastTest.framework */; };
 		873B091C2A368CA4008BF8D5 /* PlayListTableCellNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 873B091B2A368CA4008BF8D5 /* PlayListTableCellNib.xib */; };
 		873B091F2A368CD3008BF8D5 /* PlayListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873B091E2A368CD3008BF8D5 /* PlayListTableCell.swift */; };
-		873B09212A368F94008BF8D5 /* MainTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873B09202A368F94008BF8D5 /* MainTabBarVC.swift */; };
+		873B09212A368F94008BF8D5 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873B09202A368F94008BF8D5 /* CustomTabBar.swift */; };
 		879A01532A3683A800A54FAF /* Extensions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 879A01522A3683A800A54FAF /* Extensions .swift */; };
 		879A015D2A36880F00A54FAF /* IBMPlexSansArabic-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879A015B2A36880000A54FAF /* IBMPlexSansArabic-Bold.otf */; };
 		879A015E2A36881300A54FAF /* IBMPlexSansArabic-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879A015A2A36880000A54FAF /* IBMPlexSansArabic-ExtraLight.otf */; };
@@ -50,7 +50,7 @@
 		12730E33DB2296B18C867344 /* Pods-PodcastTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodcastTest.debug.xcconfig"; path = "Target Support Files/Pods-PodcastTest/Pods-PodcastTest.debug.xcconfig"; sourceTree = "<group>"; };
 		873B091B2A368CA4008BF8D5 /* PlayListTableCellNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayListTableCellNib.xib; sourceTree = "<group>"; };
 		873B091E2A368CD3008BF8D5 /* PlayListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListTableCell.swift; sourceTree = "<group>"; };
-		873B09202A368F94008BF8D5 /* MainTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarVC.swift; sourceTree = "<group>"; };
+		873B09202A368F94008BF8D5 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		879A01522A3683A800A54FAF /* Extensions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions .swift"; sourceTree = "<group>"; };
 		879A01552A3687FF00A54FAF /* IBMPlexSansArabic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Regular.otf"; sourceTree = "<group>"; };
 		879A01562A3687FF00A54FAF /* IBMPlexSansArabic-Text.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Text.otf"; sourceTree = "<group>"; };
@@ -108,6 +108,23 @@
 				873B091E2A368CD3008BF8D5 /* PlayListTableCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		879301392A372E8B0013601E /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				87E92BFD2A36764A00DB1ACA /* HomeVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		8793013A2A372ED30013601E /* Sotryboards */ = {
+			isa = PBXGroup;
+			children = (
+				87D072F92A36CAAB00E4F6E4 /* Auth.storyboard */,
+				87E92BEB2A3641FD00DB1ACA /* Main.storyboard */,
+			);
+			path = Sotryboards;
 			sourceTree = "<group>";
 		};
 		879A01542A3687CB00A54FAF /* Fonts */ = {
@@ -186,6 +203,7 @@
 		87E92BE42A3641FD00DB1ACA /* PodcastTest */ = {
 			isa = PBXGroup;
 			children = (
+				8793013A2A372ED30013601E /* Sotryboards */,
 				87D072EC2A36C7BA00E4F6E4 /* NetWork */,
 				87D072E92A36C78500E4F6E4 /* Models */,
 				87E92BFF2A367D1300DB1ACA /* Helpers */,
@@ -194,15 +212,9 @@
 				87E92BF92A36437F00DB1ACA /* Auth */,
 				87E92BE52A3641FD00DB1ACA /* AppDelegate.swift */,
 				87E92BE72A3641FD00DB1ACA /* SceneDelegate.swift */,
-				87D073012A36D4DB00E4F6E4 /* Enums.swift */,
 				87E92BE92A3641FD00DB1ACA /* ViewController.swift */,
-				87E92BEB2A3641FD00DB1ACA /* Main.storyboard */,
-				87D072F92A36CAAB00E4F6E4 /* Auth.storyboard */,
-				87E92BEE2A3641FF00DB1ACA /* Assets.xcassets */,
-				87E92C022A367F4100DB1ACA /* Colors.xcassets */,
 				87E92BF02A3641FF00DB1ACA /* LaunchScreen.storyboard */,
 				87E92BF32A3641FF00DB1ACA /* Info.plist */,
-				87D072FF2A36D33C00E4F6E4 /* WindowManager.swift */,
 			);
 			path = PodcastTest;
 			sourceTree = "<group>";
@@ -218,6 +230,8 @@
 		87E92BFA2A3643DA00DB1ACA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				87E92C022A367F4100DB1ACA /* Colors.xcassets */,
+				87E92BEE2A3641FF00DB1ACA /* Assets.xcassets */,
 				879A01542A3687CB00A54FAF /* Fonts */,
 			);
 			path = Resources;
@@ -226,8 +240,8 @@
 		87E92BFB2A3675EB00DB1ACA /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				873B09202A368F94008BF8D5 /* CustomTabBar.swift */,
 				87E92BFC2A36763700DB1ACA /* Home */,
-				873B09202A368F94008BF8D5 /* MainTabBarVC.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -235,8 +249,8 @@
 		87E92BFC2A36763700DB1ACA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				879301392A372E8B0013601E /* VC */,
 				879A01652A3689AD00A54FAF /* TableCells */,
-				87E92BFD2A36764A00DB1ACA /* HomeVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -244,6 +258,8 @@
 		87E92BFF2A367D1300DB1ACA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				87D072FF2A36D33C00E4F6E4 /* WindowManager.swift */,
+				87D073012A36D4DB00E4F6E4 /* Enums.swift */,
 				87D072FD2A36D10200E4F6E4 /* ActivityIndicatorManager.swift */,
 				87D072F72A36C98700E4F6E4 /* UserDefaultsExtensions.swift */,
 				87E92C002A367D2800DB1ACA /* DesignableView.swift */,
@@ -414,7 +430,7 @@
 				87E92BE82A3641FD00DB1ACA /* SceneDelegate.swift in Sources */,
 				87D073062A36D6B200E4F6E4 /* Episode.swift in Sources */,
 				87D072F42A36C7CB00E4F6E4 /* API.swift in Sources */,
-				873B09212A368F94008BF8D5 /* MainTabBarVC.swift in Sources */,
+				873B09212A368F94008BF8D5 /* CustomTabBar.swift in Sources */,
 				87D073022A36D4DB00E4F6E4 /* Enums.swift in Sources */,
 				87D073042A36D69500E4F6E4 /* Playlist.swift in Sources */,
 			);

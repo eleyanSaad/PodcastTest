@@ -124,17 +124,18 @@ extension UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    func showAlertWithAction(title: String, message: String, buttonText: String, completion: (() -> Void)? = nil) {
-         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-         
-         let action = UIAlertAction(title: buttonText, style: .default) { (_) in
-             completion?()
-         }
-         
-         alertController.addAction(action)
-         
-         present(alertController, animated: true, completion: nil)
-     }
+    func showLogoutAlert(title : String , body : String,completion: @escaping () -> Void) {
+            let alertController = UIAlertController(title: title, message: body, preferredStyle: .alert)
+            
+            
+            let logoutAction = UIAlertAction(title: "تسجيل خروج", style: .destructive) { (_) in
+                completion()
+            }
+            
+            alertController.addAction(logoutAction)
+            
+            present(alertController, animated: true, completion: nil)
+        }
 }
 
 

@@ -17,6 +17,7 @@ import AVKit
 class HomeVC: UIViewController{
     
     // MARK: - OUTLETS
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet var headerLabel:UILabel!
@@ -91,17 +92,20 @@ class HomeVC: UIViewController{
                 self.episodeNumberLabel.text = "\(playList.episodeCount ?? 0) حلقة ,\(playList.episodeTotalDuration?.formattedTimeString ?? "")"
                 
             }else{
-                
+                self.view.backgroundColor = .white
                 if message == "500" || message == "401"{
                     // this mean ,my access toke is expired , so need to use sotred refresh token ,to get new access token and recall the request , but in this api collection i didn't found endPoint for this.
                     
                     //                  self.getPlayListDetails()
                     
-                    self.errorAlert(title: "تنبيه", body: "this mean ,my access toke is expired , so need to use sotred refresh token ,to get new access token and recall the request , but in this api collection i didn't found endPoint for this" )
                     
-                    
-                    self.showAlertWithAction(title: "تنبيه", message: "this mean ,my access toke is expired , so need to use sotred refresh token ,to get new access token and recall the request , but in this api collection i didn't found endPoint for this, so my current sloution to can fix this with out refresh token endpoit , is logout from the app and login again" , buttonText: "تسجيل خروج")
-                    
+                    self.showLogoutAlert(title: "تنبيه", body: "Your session is expired you need to relogin") {
+                        let story = AppStoryboard.auth.instance
+                        let vc = story.instantiateViewController(withIdentifier: "authRoot")
+                        UIApplication.shared.windows.first?.rootViewController = vc
+                        UIApplication.shared.windows.first?.makeKeyAndVisible()
+                        
+                    }
                 }else {
                     self.errorAlert(title: "تنبيه", body: message )
                 }
@@ -114,7 +118,7 @@ class HomeVC: UIViewController{
         self.registerNibCells()
         self.loadSkeletonView()
         setupParallaxHeader()
-        botomView.layer.cornerRadius = 10
+        botomView.layer.cornerRadius = 8
         botomView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         self.scrollView.delegate = self
         // Make the navigation bar transparent
@@ -124,6 +128,7 @@ class HomeVC: UIViewController{
         headBackView?.alpha = 0.0
         headerView.insertSubview(headBackView, belowSubview: headerLabel)
         headerView.clipsToBounds = true
+        
     }
     
     
@@ -132,6 +137,8 @@ class HomeVC: UIViewController{
         
         self.podCastDescraptionLabel.showAnimatedGradientSkeleton(usingGradient: .init(baseColor: .skeletonDefault), animation: nil, transition: .crossDissolve(0.25))
         
+        self.episodeNumberLabel.showAnimatedGradientSkeleton(usingGradient: .init(baseColor: .skeletonDefault), animation: nil, transition: .crossDissolve(0.25))
+        
         self.podCastMainBackGroundImageView.showAnimatedGradientSkeleton(usingGradient: .init(baseColor: .skeletonDefault), animation: nil, transition: .crossDissolve(0.25))
     }
     
@@ -139,6 +146,7 @@ class HomeVC: UIViewController{
         self.podCastTitleLabel.hideSkeleton()
         self.podCastDescraptionLabel.hideSkeleton()
         self.podCastMainBackGroundImageView.hideSkeleton()
+        self.episodeNumberLabel.hideSkeleton()
     }
     
     private func setupParallaxHeader() {
@@ -287,3 +295,5 @@ extension HomeVC{
         self.lastContentOffset = scrollView.contentOffset.y
     }
 }
+
+

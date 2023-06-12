@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import IQKeyboardManagerSwift
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,6 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         //Set BackgroundColor
+        if let tabBarItems = UITabBarItem.appearance().titleTextAttributes(for: .normal) {
+            var attributes = tabBarItems
+            attributes[NSAttributedString.Key.font] = UIFont(name: "BMPlexSansArabic-Medium", size: 11)
+            UITabBarItem.appearance().setTitleTextAttributes(attributes, for: .normal)
+        }
+        
+        IQKeyboardManager.shared.enable = true
 
         return true
     }

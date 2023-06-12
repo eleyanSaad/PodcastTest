@@ -14,4 +14,6 @@ pod 'SwifterSwift'
 pod 'ParallaxHeader', '~> 3.0.0'
 pod "RappleProgressHUD"
 pod "SkeletonView"
+pod 'IQKeyboardManagerSwift'
+
 end
