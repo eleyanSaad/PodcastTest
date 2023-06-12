@@ -17,7 +17,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="playListCellID" rowHeight="146" id="SH4-oE-wa2">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="playListCellID" rowHeight="146" id="SH4-oE-wa2" customClass="PlayListTableCell" customModule="PodcastTest" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="393" height="146"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SH4-oE-wa2" id="YVi-kQ-AwX">
@@ -34,6 +34,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="menu"/>
+                                <connections>
+                                    <action selector="dropListTapped:" destination="SH4-oE-wa2" eventType="touchUpInside" id="UFX-kS-B2Q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eC3-Bv-7oz">
                                 <rect key="frame" x="25.000000000000004" y="0.0" width="32.333333333333343" height="32"/>
@@ -42,6 +45,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="Play"/>
+                                <connections>
+                                    <action selector="playPodCastTapped:" destination="SH4-oE-wa2" eventType="touchUpInside" id="9kD-Pf-90g"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -88,6 +94,13 @@
                     <constraint firstAttribute="trailing" secondItem="TnI-Jz-s1U" secondAttribute="trailing" constant="16.5" id="wVI-Nf-Tr8"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="playPodcastButton" destination="eC3-Bv-7oz" id="4bL-hQ-MbB"/>
+                <outlet property="podCastDateLabel" destination="H8m-IJ-hWf" id="D3d-jG-9dD"/>
+                <outlet property="podCastDescrpationLabel" destination="ngU-Uf-O0S" id="GAO-hP-PiL"/>
+                <outlet property="podCastImageView" destination="TnI-Jz-s1U" id="w0n-ZJ-pai"/>
+                <outlet property="podCastTitleLabel" destination="Fye-yR-dKQ" id="YOe-fb-RaU"/>
+            </connections>
             <point key="canvasLocation" x="136.64122137404578" y="17.605633802816904"/>
         </tableViewCell>
     </objects>
@@ -96,7 +109,7 @@
         <image name="menu" width="24.333333969116211" height="24.333333969116211"/>
         <image name="photo" width="76.333335876464844" height="76.333335876464844"/>
         <namedColor name="ChimneySweep500">
-            <color red="0.46274507050000002" green="0.47058826679999999" blue="0.48627454040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.46299999952316284" green="0.47099998593330383" blue="0.48600000143051147" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

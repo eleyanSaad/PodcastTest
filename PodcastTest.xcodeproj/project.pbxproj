@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		51E3CF6486DD7CAA934A4A47 /* Pods_PodcastTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2C76E505E47ED944998E12 /* Pods_PodcastTest.framework */; };
+		873B091C2A368CA4008BF8D5 /* PlayListTableCellNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 873B091B2A368CA4008BF8D5 /* PlayListTableCellNib.xib */; };
+		873B091F2A368CD3008BF8D5 /* PlayListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873B091E2A368CD3008BF8D5 /* PlayListTableCell.swift */; };
+		873B09212A368F94008BF8D5 /* MainTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873B09202A368F94008BF8D5 /* MainTabBarVC.swift */; };
 		879A01532A3683A800A54FAF /* Extensions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 879A01522A3683A800A54FAF /* Extensions .swift */; };
 		879A015D2A36880F00A54FAF /* IBMPlexSansArabic-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879A015B2A36880000A54FAF /* IBMPlexSansArabic-Bold.otf */; };
 		879A015E2A36881300A54FAF /* IBMPlexSansArabic-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879A015A2A36880000A54FAF /* IBMPlexSansArabic-ExtraLight.otf */; };
@@ -17,7 +20,6 @@
 		879A01622A36881E00A54FAF /* IBMPlexSansArabic-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879A015C2A36880000A54FAF /* IBMPlexSansArabic-SemiBold.otf */; };
 		879A01632A36882000A54FAF /* IBMPlexSansArabic-Text.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879A01562A3687FF00A54FAF /* IBMPlexSansArabic-Text.otf */; };
 		879A01642A36882200A54FAF /* IBMPlexSansArabic-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 879A01572A3687FF00A54FAF /* IBMPlexSansArabic-Thin.otf */; };
-		879A01672A3689CC00A54FAF /* PlayListTableCellNib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 879A01662A3689CC00A54FAF /* PlayListTableCellNib.xib */; };
 		87E92BE62A3641FD00DB1ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E92BE52A3641FD00DB1ACA /* AppDelegate.swift */; };
 		87E92BE82A3641FD00DB1ACA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E92BE72A3641FD00DB1ACA /* SceneDelegate.swift */; };
 		87E92BEA2A3641FD00DB1ACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E92BE92A3641FD00DB1ACA /* ViewController.swift */; };
@@ -31,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		12730E33DB2296B18C867344 /* Pods-PodcastTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodcastTest.debug.xcconfig"; path = "Target Support Files/Pods-PodcastTest/Pods-PodcastTest.debug.xcconfig"; sourceTree = "<group>"; };
+		873B091B2A368CA4008BF8D5 /* PlayListTableCellNib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayListTableCellNib.xib; sourceTree = "<group>"; };
+		873B091E2A368CD3008BF8D5 /* PlayListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListTableCell.swift; sourceTree = "<group>"; };
+		873B09202A368F94008BF8D5 /* MainTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarVC.swift; sourceTree = "<group>"; };
 		879A01522A3683A800A54FAF /* Extensions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions .swift"; sourceTree = "<group>"; };
 		879A01552A3687FF00A54FAF /* IBMPlexSansArabic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Regular.otf"; sourceTree = "<group>"; };
 		879A01562A3687FF00A54FAF /* IBMPlexSansArabic-Text.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Text.otf"; sourceTree = "<group>"; };
@@ -40,7 +45,6 @@
 		879A015A2A36880000A54FAF /* IBMPlexSansArabic-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-ExtraLight.otf"; sourceTree = "<group>"; };
 		879A015B2A36880000A54FAF /* IBMPlexSansArabic-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-Bold.otf"; sourceTree = "<group>"; };
 		879A015C2A36880000A54FAF /* IBMPlexSansArabic-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSansArabic-SemiBold.otf"; sourceTree = "<group>"; };
-		879A01662A3689CC00A54FAF /* PlayListTableCellNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListTableCellNib.xib; sourceTree = "<group>"; };
 		87E92BE22A3641FD00DB1ACA /* PodcastTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E92BE52A3641FD00DB1ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87E92BE72A3641FD00DB1ACA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		873B091D2A368CC1008BF8D5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				873B091E2A368CD3008BF8D5 /* PlayListTableCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		879A01542A3687CB00A54FAF /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,8 +98,8 @@
 		879A01652A3689AD00A54FAF /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
+				873B091D2A368CC1008BF8D5 /* Cells */,
 				879A01682A368BDC00A54FAF /* Nibs */,
-				879A01662A3689CC00A54FAF /* PlayListTableCellNib.xib */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -95,6 +107,7 @@
 		879A01682A368BDC00A54FAF /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
+				873B091B2A368CA4008BF8D5 /* PlayListTableCellNib.xib */,
 			);
 			path = Nibs;
 			sourceTree = "<group>";
@@ -155,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				87E92BFC2A36763700DB1ACA /* Home */,
+				873B09202A368F94008BF8D5 /* MainTabBarVC.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -265,7 +279,7 @@
 				87E92BF22A3641FF00DB1ACA /* LaunchScreen.storyboard in Resources */,
 				87E92C032A367F4100DB1ACA /* Colors.xcassets in Resources */,
 				87E92BEF2A3641FF00DB1ACA /* Assets.xcassets in Resources */,
-				879A01672A3689CC00A54FAF /* PlayListTableCellNib.xib in Resources */,
+				873B091C2A368CA4008BF8D5 /* PlayListTableCellNib.xib in Resources */,
 				87E92BED2A3641FD00DB1ACA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,11 +334,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				879A01532A3683A800A54FAF /* Extensions .swift in Sources */,
+				873B091F2A368CD3008BF8D5 /* PlayListTableCell.swift in Sources */,
 				87E92BEA2A3641FD00DB1ACA /* ViewController.swift in Sources */,
 				87E92BFE2A36764A00DB1ACA /* HomeVC.swift in Sources */,
 				87E92BE62A3641FD00DB1ACA /* AppDelegate.swift in Sources */,
 				87E92C012A367D2800DB1ACA /* DesignableView.swift in Sources */,
 				87E92BE82A3641FD00DB1ACA /* SceneDelegate.swift in Sources */,
+				873B09212A368F94008BF8D5 /* MainTabBarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
