@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.9.1)
   - IQKeyboardManagerSwift (6.5.11)
+  - ParallaxHeader (3.0.0)
   - SDWebImage (5.15.5):
     - SDWebImage/Core (= 5.15.5)
   - SDWebImage/Core (5.15.5)
@@ -34,6 +35,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.9.0)
   - IQKeyboardManagerSwift
+  - ParallaxHeader (~> 3.0.0)
   - SDWebImage (~> 5.0)
   - SwifterSwift
   - SwiftyJSON
@@ -42,6 +44,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - IQKeyboardManagerSwift
+    - ParallaxHeader
     - SDWebImage
     - SwifterSwift
     - SwiftyJSON
@@ -49,10 +52,11 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  ParallaxHeader: a343f55eb38f52a89c5820a77e14cf975b84e6aa
   SDWebImage: fd7e1a22f00303e058058278639bf6196ee431fe
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: e0b3482910aaea3aca14e361e1f8284da15f7411
+PODFILE CHECKSUM: 39a88e26c1152aa2686f3916b6555f248d28da9c
 
 COCOAPODS: 1.12.0

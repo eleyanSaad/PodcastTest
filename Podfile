@@ -11,6 +11,7 @@ pod 'Alamofire',  '~>4.9.0'
 pod 'SwiftyJSON'
 pod 'SDWebImage', '~> 5.0'
 pod 'SwifterSwift'
+pod 'ParallaxHeader', '~> 3.0.0'
 
 
 end
